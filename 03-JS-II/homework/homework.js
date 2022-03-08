@@ -20,9 +20,9 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
 
 if (edad>=18) {
-  return "Allowed"
+  return "Allowed";
 } else {
-  return "Not allowed"
+  return "Not allowed";
 }
 
 }
@@ -119,7 +119,7 @@ function fizzBuzz(numero) {
   } else if (numero % 5 === 0){
     return "buzz"
   } else {
-    return numero
+    return numero;
   }
 }
 
@@ -150,16 +150,18 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero === 0 || numero === 1) {
-    return false
-  }
-   for (i = 2; i < numero; i ++) {
+
+    if (numero === 0 || numero === 1) {
+    return false;
+    }
+     for (i = 2; i < numero; i ++) {
     if (numero % i === 0) {
-      return false 
+      return false; 
     } 
   } 
-  return true
-}
+  return true;
+  }
+
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -167,9 +169,9 @@ function esVerdadero(valor){
   //Escribe tu código aquí
 
   if (valor === true) {
-  return "Soy verdadero"
+  return "Soy verdadero";
   } else if (valor === false) {
-  return "Soy falso"
+  return "Soy falso";
   }
 }
 
@@ -181,7 +183,7 @@ function tablaDelSeis(){
   for (i = 0; i < 11; i++) {
     tablaSeis.push(i *6)
   }
-  return tablaSeis
+  return tablaSeis;
 }
 
 function tieneTresDigitos(numero){
@@ -197,14 +199,16 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
   var i = 0; 
   do {
-    i = i ++;
+    i = i +1;
     numero += 5
   }
   while (i < 8);
   return numero;
 }
+
 
 
 // No modificar nada debajo de esta línea
